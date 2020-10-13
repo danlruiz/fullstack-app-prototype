@@ -53,5 +53,14 @@ ionic lab
 
 ```
 
+## TroubleShoot
+
+if the authentication button doesn't work, try installing the CORS-plugin found here : 
+
+
+https://addons.mozilla.org/en-CA/firefox/addon/cors-plugin/
+
+
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
 
 

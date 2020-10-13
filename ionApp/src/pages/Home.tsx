@@ -72,6 +72,7 @@ class Home extends React.Component<
     const requestOptions = {
       method: "POST",
       headers: {
+        // "Access-Control-Allow-Headers" : "*",
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
@@ -89,7 +90,7 @@ class Home extends React.Component<
       method: "GET",
       headers: {
         // "Content-Type": "application/json",
-        // "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*",
         Authorization: "Token " + this.state.token,
       }, //,
       // body: JSON.stringify({ username: "Ike", password: "supersecret123" }),
@@ -100,12 +101,7 @@ class Home extends React.Component<
         
         this.state.userID === null ? this.setState({ posts: data, userID: data[0].user }) : this.setState({ posts: data })
         
-        
-        
-        
-    
-    
-    
+
       ))
     console.log(this.state.posts);
   };
@@ -133,7 +129,7 @@ class Home extends React.Component<
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        // "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*",
         Authorization: "Token " + this.state.token,
       },
       // body: JSON.stringify({ username: this.state.username, password: this.state.password }),
@@ -153,7 +149,7 @@ class Home extends React.Component<
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        // "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*",
         Authorization: "Token " + this.state.token,
       },
       // body: JSON.stringify({ username: this.state.username, password: this.state.password }),
@@ -236,6 +232,8 @@ class Home extends React.Component<
                 </form>
               </>
             )}
+
+              
             <br>
             </br>
             <br></br>
