@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<form method="POST">
+  {% csrf_token %}
+  <input size="40" placeholder="Enter your new todo here" type="text" name="edit_data" value="{{text}}" />
+  <input type="submit" value="Submit" />
+</form>
+
+{% endblock content %}

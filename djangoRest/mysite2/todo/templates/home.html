@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+<p>Welcome home, <b>{{ name }} </b></p>
+
+<p>This is Home :)</p>
+
+<form method="POST">
+  {% csrf_token %}
+  <input size="40" placeholder="Enter you to do item here" id="key" type="text" name="key" value="" />
+  <input type="submit" value="Submit" />
+</form>
+
+<p>All your todos:</p>
+<ul>
+  {% for todo in todos %}
+  <li>
+    {{todo.text}}
+    <a href="{% url 'delete' todo_id=todo.id %}">|| Delete</a>
+    <a href="edit/{{ todo.id }}">|| Edit </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<a href="/todo/logout">logout</a>
+
+{% endblock %}

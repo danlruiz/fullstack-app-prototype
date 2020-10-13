@@ -1,0 +1,2 @@
+Adding REST to django project: https://www.youtube.com/watch?v=fHpiwPcTcYw
+Add REST / Getting CRUD out of API: https://www.youtube.com/watch?v=1k0fRG098cU

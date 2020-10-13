@@ -1,0 +1,23 @@
+[
+    {
+        "id": 6,
+        "user": 9,
+        "text": "Bonjour",
+        "is_completed": false,
+        "date_created": "2020-10-07T17:27:47.783884Z"
+    },
+    {
+        "id": 12,
+        "user": 9,
+        "text": "Stuff",
+        "is_completed": false,
+        "date_created": "2020-10-07T23:11:41.652824Z"
+    },
+    {
+        "id": 13,
+        "user": 9,
+        "text": "the API works!",
+        "is_completed": false,
+        "date_created": "2020-10-08T14:24:55.327709Z"
+    }
+]
